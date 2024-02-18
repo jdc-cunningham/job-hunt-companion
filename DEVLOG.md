@@ -8,7 +8,11 @@ Going to make the basic API and seed DB
 
 I have been applying, looked at like 50 some jobs applied to 3 lol damn
 
+6:49 PM
 
+I imagine this popup showing up on the bottom right of my desktop with the anime girl face on it
+
+But I don't think I can do that, maybe a low res pixelated favicon
 
 ---
 
