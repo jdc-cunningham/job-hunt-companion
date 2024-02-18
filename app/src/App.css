@@ -1,0 +1,22 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.JobList,
+.CharacterInteractions {
+  height: 100%;
+}
+
+.JobList {
+  width: 55%;
+}
+
+.CharacterInteractions {
+  width: 45%;
+}

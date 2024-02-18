@@ -1,4 +1,18 @@
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('./assets/fonts/Silkscreen/slkscr.ttf') format('truetype'),
+    url('./assets/fonts/Silkscreen/slkscreb.ttf') format('truetype');
+}
+
+body {
+  background-color: #DABC94;
+}
+
 body * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: Silkscreen;
+}
+
+h2 {
+  font-size: 4rem;
 }

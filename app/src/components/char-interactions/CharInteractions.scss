@@ -1,0 +1,26 @@
+.CharacterInteractions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+}
+
+.CharacterInteractions__character {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.CharacterInteractions__input {
+  display: flex;
+  width: 100%;
+  flex: 1;  
+  background-color: transparent;
+  border-color: white;
+  border-radius: 8px;
+  border-width: 4px;
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem;
+}

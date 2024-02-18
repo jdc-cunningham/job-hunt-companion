@@ -14,6 +14,40 @@ I imagine this popup showing up on the bottom right of my desktop with the anime
 
 But I don't think I can do that, maybe a low res pixelated favicon
 
+7:07 PM
+
+I kind of see the app but I don't
+
+So I'll vaguely make it, it'll be brown for some reason
+
+7:14 PM
+
+Oh yeah this time I'll be a good boy and separate the API code from the UI logic
+
+7:27 PM
+
+Got sidetracked by the graphics tablet not matching my ultrawide monitor's color profile ha
+
+7:40 PM
+
+This will have basic animation like blinking, moving
+
+The text will come in 1 char at a time
+
+<img src="layout.JPG"/>
+
+This will be a desktop app, I had a speech bubble in mind, not too late but need to change the image
+
+Oh yeah I did spend like 10 minutes trying to find some kind of face to use
+
+<img src="faces.JPG"/>
+
+This one is a good starting point where it has a neutral/happy face, then it's easy to make the face talk by changing mouth height and blinking is similar
+
+I could probably crop the background, so the face can move with CSS (simulated breathing)
+
+This was pixelized with Gimp 4px block size I believe or 8px
+
 ---
 
 02/15/2024
