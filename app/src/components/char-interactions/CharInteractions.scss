@@ -10,10 +10,27 @@
   }
 }
 
+.CharacterInteractions__character-bg {
+  position: relative;
+  width: 100%;
+  background-color: #1F5198;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
 .CharacterInteractions__character {
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 16px;
 }
 
 .CharacterInteractions__input {
@@ -22,7 +39,7 @@
   flex: 1;  
   background-color: transparent;
   border-color: #664229;
-  border-radius: 8px;
+  border-radius: 16px;
   border-width: 4px;
   font-size: 2rem;
   color: #664229;
