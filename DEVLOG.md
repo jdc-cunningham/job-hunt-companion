@@ -1,3 +1,17 @@
+02/17/2024
+
+6:07 PM
+
+I ate a little extra on my 2nd break, I feel like I have more energy now we'll see
+
+Going to make the basic API and seed DB
+
+I have been applying, looked at like 50 some jobs applied to 3 lol damn
+
+
+
+---
+
 02/15/2024
 
 6:43 PM
