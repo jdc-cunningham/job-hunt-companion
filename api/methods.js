@@ -31,38 +31,9 @@ const addJobApp = async (req, res) => {
   const { companyName, jobInfo, source, techStack, whyNotApply, status } = req.body;
   const now = formatTimeStr(getDateTime());
 
-  let jobApps = null;
-  let jobAppSearchErr = false;
-
-  try {
-    jobApps = await _jobAppExists(companyName);
-  } catch (e) {
-    console.error(e);
-    jobAppSearchErr = true;
-  }
-
-  if (jobAppSearchErr) {
-    res.status(400).send({
-      err: true,
-      msg: 'failed to check if job application exists'
-    });
-
-    return;
-  }
-
-  // need a check on front end to keep going or not
-  if (note?.exists) {
-    res.status(400).send({
-      err: true,
-      msg: 'job app exists'
-    });
-
-    return;
-  }
-
   pool.query(
     `INSERT INTO job_applications SET id = ?, company_name = ?, job_info = ?, source = ?, tech_stack = ?, why_not_apply = ?, status = ?, created = ?`,
-    [null, companyName, jobInfo, source, techStack, whyNotApply, status],
+    [null, companyName, jobInfo, source, techStack, whyNotApply, status, now],
     (err, qres) => {
       if (err) {
         console.error('failed to insert note', err);
