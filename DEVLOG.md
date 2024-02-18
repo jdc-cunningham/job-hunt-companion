@@ -48,6 +48,10 @@ I could probably crop the background, so the face can move with CSS (simulated b
 
 This was pixelized with Gimp 4px block size I believe or 8px
 
+8:00 PM
+
+Some good progress, I'll finish this maybe tomorrow or next day, I have a nice break coming up
+
 ---
 
 02/15/2024
