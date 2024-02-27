@@ -1,3 +1,39 @@
+02/26/2024
+
+5:38 PM
+
+I don't feel great right now, I slept in but also donated plasma 3 hrs ago
+
+I did not eat right away afterwards... should have
+
+But I mentally feel spent already which sucks but if I do the donation earlier it's faster (less waiting)
+
+Got a bite from a recruiter but it's some nice tech and I don't 100% hit all the req so doubtful that'll go anywhere
+
+Only positive is for once in a long time I have a tax refund that'll give me some padding since every month right now I'm short $1.5K in bills lmao
+
+Somehow I've gotten by the last 3 months (I keep missing payments, late fees)
+
+5:46 PM
+
+I'm not really feeling it right now so I'll just animate the character, ugh... waste of time today damn
+
+I did some work for a friend but it was not much
+
+The mid-day interruption really does suck, supposed to have 3 whole days off but the extra money helps
+
+02/23/2024
+
+7:13 PM
+
+Super tired today, gonna try and do something with this
+
+5:57 PM
+
+Damn I'm struggling
+
+---
+
 02/17/2024
 
 6:07 PM
