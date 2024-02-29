@@ -1,3 +1,15 @@
+02/28/2024
+
+This is still not done
+
+I've recently eaten, near end of day, donated plasma... I feel pretty mentally beat
+
+Alright let me do some things before today is over... I gotta back to my mental prison (labor job)
+
+
+
+---
+
 02/26/2024
 
 5:38 PM
