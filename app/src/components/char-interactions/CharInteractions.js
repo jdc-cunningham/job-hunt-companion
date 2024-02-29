@@ -8,6 +8,17 @@ const CharacterInteractions = (props) => {
   const charImages = [Char, HalfBlinkChar, FullBlinkChar];
   const [blinkState, setBlinkState] = useState(0);
 
+  const welcomeMsg = "Have you applied to any jobs today?";
+  const [msgCharId, setMsgCharId] = useState(0);
+
+  const updateMsg = () => {
+    if (msgCharId < welcomeMsg.length - 1) {
+      setMsgCharId(msgCharId + 1);
+    } else {
+      setMsgCharId(0);
+    }
+  }
+
   const updateBlinkState = () => {
     if (blinkState < 2) {
       setBlinkState(blinkState + 1);
@@ -15,6 +26,14 @@ const CharacterInteractions = (props) => {
       setBlinkState(0);
     }
   }
+
+  useEffect(() => {
+    const msgDelay = msgCharId === welcomeMsg.length - 1 ? 3000 : 100;
+
+    setTimeout(() => {
+      updateMsg();
+    }, msgDelay);
+  }, [msgCharId]);
 
   useEffect(() => {
     const blinkDelay = blinkState > 0 ? 150 : 1000;
@@ -30,7 +49,7 @@ const CharacterInteractions = (props) => {
         <img className="CharacterInteractions__character anim-up-down" src={charImages[blinkState]} alt="anime character"/>
       </div>
       <h2>Job-chan</h2>
-      <textarea className="CharacterInteractions__input" value="Have you applied to any jobs today?"/>
+      <textarea className="CharacterInteractions__input" value={welcomeMsg.substring(0, msgCharId + 1)}/>
     </div>
   );
 }

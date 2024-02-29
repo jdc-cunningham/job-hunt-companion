@@ -12,6 +12,10 @@ This looks so bad... I'm not an artist
 
 <img src="./terrifying.gif"/>
 
+9:13 PM
+
+Added animated chars, it's not interactive though, I was intending it to be but what... write into it? Exact char match? What matters is the input form on the left/charts.
+
 ---
 
 02/26/2024
