@@ -6,7 +6,11 @@ I've recently eaten, near end of day, donated plasma... I feel pretty mentally b
 
 Alright let me do some things before today is over... I gotta back to my mental prison (labor job)
 
+8:54 PM
 
+This looks so bad... I'm not an artist
+
+<img src="./terrifying.gif"/>
 
 ---
 
