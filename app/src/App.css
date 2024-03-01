@@ -8,12 +8,12 @@
   padding: 1rem;
 }
 
-.JobList,
+.JobApplications,
 .CharacterInteractions {
   height: 100%;
 }
 
-.JobList {
+.JobApplications {
   width: 65%;
 }
 

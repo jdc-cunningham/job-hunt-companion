@@ -1,4 +1,4 @@
-import JobList from "./components/job-list/JobList";
+import JobApplications from "./components/job-applications/JobApplications";
 import CharacterInteractions from "./components/char-interactions/CharInteractions";
 
 import './App.css';
@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <JobList />
+      <JobApplications />
       <CharacterInteractions />
     </div>
   );

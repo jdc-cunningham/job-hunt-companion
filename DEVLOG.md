@@ -1,3 +1,23 @@
+02/29/2024
+
+5:58 PM
+
+Alright free from mental prison
+
+I'm gonna add the three tabs (Overview, Applied, Did Not Apply)
+
+The Overview is a dashboard/charts view and the other two are dedicated purpose forms
+
+I want to see total number of jobs I've looked at
+
+Then applied, rejected, I think that means 3 lines on a chart
+
+Today is a Monday for me which are the worst (oversleep reset) so I had I think 4 hrs of sleep max last night
+
+I feel like I can code though
+
+---
+
 02/28/2024
 
 This is still not done

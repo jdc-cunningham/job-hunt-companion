@@ -1,0 +1,32 @@
+.HeaderTabs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  flex: 0;
+}
+
+.HeaderTabs__tab {
+  border: 2px solid #664229;
+  border-radius: 16px;
+  font-size: 1.75rem;
+  padding: 0.5rem 1rem;
+  color: #664229;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover, &.active {
+    background-color: #664229;
+    color: white;
+  }
+
+  &:not(:first-of-type) {
+    margin-left: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

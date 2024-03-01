@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Char from "../../assets/images/waifu_labs_char.png";
 import HalfBlinkChar from "../../assets/images/waifu_labs_char_half_blink.png";
 import FullBlinkChar from "../../assets/images/waifu_labs_char_full_blink.png";
