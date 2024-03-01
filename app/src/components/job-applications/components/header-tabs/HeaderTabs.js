@@ -1,8 +1,7 @@
 import './HeaderTabs.scss';
 
 const HeaderTabs = (props) => {
-  const tabs = ['Overview', 'Applied', 'Did Not Apply'];
-  const { activeTabId, setActiveTabId } = props;
+  const { activeTabId, setActiveTabId, tabs } = props;
 
   return (
     <div className="HeaderTabs">
