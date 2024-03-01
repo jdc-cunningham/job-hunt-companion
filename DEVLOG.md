@@ -34,6 +34,18 @@ Break for now till later when I eat, maybe have more energy
 
 Let me bridge the two forms so they work
 
+10:16 PM
+
+No... tired, also I didn't make it with the applied or not format... it could still be 1 table
+
+Oh okay so seed has a `why_not_apply`column so if that's blank then I must have applied
+
+10:18 PM
+
+I can finish this tomorrow, it's close
+
+I'm just tired, will use the spreadsheet
+
 ---
 
 02/28/2024
