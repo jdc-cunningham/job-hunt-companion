@@ -16,6 +16,18 @@ Today is a Monday for me which are the worst (oversleep reset) so I had I think 
 
 I feel like I can code though
 
+6:52 PM
+
+Damn I'm tired as hell
+
+Can see where I'm at
+
+<img src="./current.png"/>
+
+I want to add the insert calls at least
+
+I did see how the overview/dashboard could look
+
 ---
 
 02/28/2024
