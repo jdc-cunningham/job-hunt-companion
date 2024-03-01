@@ -2,4 +2,4 @@
 
 Way to keep sane during these trying times
 
-<img src="./ui.JPG"/>
+<img src="./ui.gif"/>
