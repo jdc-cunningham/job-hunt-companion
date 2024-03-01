@@ -6,3 +6,50 @@
   width: calc(100% - 1rem);
   margin-right: 1rem;
 }
+
+.Body__apply-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+
+  p {
+    font-size: 1.5rem;
+    color: #664229;
+    font-weight: bold;
+  }
+
+  input {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 16px;
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  textarea {
+    margin-top: 1rem;
+    border-radius: 16px;
+    width: 80%;
+    min-height: 150px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #7C4700;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

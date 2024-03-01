@@ -28,6 +28,12 @@ I want to add the insert calls at least
 
 I did see how the overview/dashboard could look
 
+6:54 PM
+
+Break for now till later when I eat, maybe have more energy
+
+Let me bridge the two forms so they work
+
 ---
 
 02/28/2024
