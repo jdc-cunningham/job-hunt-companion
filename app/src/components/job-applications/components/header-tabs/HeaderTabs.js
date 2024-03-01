@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
-
 import './HeaderTabs.scss';
 
 const HeaderTabs = (props) => {
   const tabs = ['Overview', 'Applied', 'Did Not Apply'];
-
-  const [activeTabId, setActiveTabId] = useState(0);
+  const { activeTabId, setActiveTabId } = props;
 
   return (
     <div className="HeaderTabs">
       {tabs.map((tab, tabId) => (
-        <div className={`HeaderTabs__tab ${activeTabId === tabId ? 'active' : ''}`}>
+        <div
+          className={`HeaderTabs__tab ${activeTabId === tabId ? 'active' : ''}`}
+          onClick={() => setActiveTabId(tabId)}
+        >
           {tabs[tabId]}
         </div>
       ))}
