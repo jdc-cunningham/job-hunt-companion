@@ -16,6 +16,8 @@ Don't know if I'll do that today... I still have 30 mins I could keep going
 
 Would be nice to have all of it/have a counter
 
+I want to get the CSV import done before my next weekend starts up so I don't spend any time on this project.
+
 ---
 
 02/29/2024
