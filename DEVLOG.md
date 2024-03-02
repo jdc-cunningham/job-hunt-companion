@@ -1,3 +1,23 @@
+03/01/2024
+
+6:56 PM
+
+Gonna add the API call, struggling, I'm tired AF same old
+
+7:22 PM
+
+There... ability to add
+
+<img src="./added-job-app.gif"/>
+
+I have to add a script to import the existing job apps I saved in google spreadsheet
+
+Don't know if I'll do that today... I still have 30 mins I could keep going
+
+Would be nice to have all of it/have a counter
+
+---
+
 02/29/2024
 
 5:58 PM
