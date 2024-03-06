@@ -6,7 +6,7 @@ import { Line } from 'react-chartjs-2';
 
 import './Body.scss';
 
-const baseApiPath = 'http://localhost:5076';
+const baseApiPath = window.location.href.includes('local') ? 'http://localhost:5076' : 'http://192.168.1.144:5076'; // 192 is an RPi on my local network
 
 const addJobApp = (data, setSuccess) => {
   const { companyName, stackInfo, additionalInfo, reason } = data;
