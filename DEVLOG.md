@@ -24,6 +24,22 @@ I can make one, search icon, then option to edit
 
 I got a notification a contract role I applied to was put on hold lol damn, better than rejected?
 
+1:30 PM
+
+Damn... it's still not in a usable state
+
+- [ ] need the desktop alerts (whole point of it)
+- [ ] deploy API (not hard, setup required)
+- [ ] deploy it as an electron app (easy)
+
+Well I have 2 more hours... I should do it
+
+Get it done, as my work days I'm too spent
+
+1:45 PM
+
+Low motivation
+
 
 
 ---
