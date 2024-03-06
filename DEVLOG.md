@@ -16,6 +16,14 @@ Oh yeah I'm doing the batch import... it's crazy so far I have looked at 672 job
 
 This is how those posts on Reddit about applying to thousands of jobs happen except I actually look at the job description before applying
 
+12:23 PM
+
+Oh yeah I just realized the interface doesn't have a way to edit stuff...
+
+I can make one, search icon, then option to edit
+
+I got a notification a contract role I applied to was put on hold lol damn, better than rejected?
+
 
 
 ---

@@ -92,11 +92,32 @@ const clearFields = () => {
   if (additionalInfoField) additionalInfoField.value = '';
 }
 
+const getStats = (setStats) => {
+  axios.get(
+    `${baseApiPath}/stats`,
+  )
+  .then((res) => {
+    if (res.status === 200) {
+      console.log(res);
+      console.log(res.data.data);
+      Object.keys(res.data.data.appDateCount).forEach(appDate => console.log(appDate));
+      setStats(res.data.data);
+    } else {
+      alert('Failed to get stats');
+    }
+  })
+  .catch((err) => {
+    alert('Error occurred getting stats');
+    console.error(err);
+  });
+}
+
 const Body = (props) => {
   const { activeTabId, tabs } = props;
   const activeTab = tabs[activeTabId];
 
   const [success, setSuccess] = useState(false); // used to show green animation toast thing
+  const [stats, setStats] = useState({});
 
   useEffect(() => {
     if (success) {
@@ -106,6 +127,10 @@ const Body = (props) => {
       }, 1400);
     }
   }, [success]);
+
+  useEffect(() => {
+    getStats(setStats);
+  }, []);
 
   return (
     <div className="Body">

@@ -74,11 +74,26 @@ const addJobApp = async (req, res) => {
   );
 };
 
+// dumb
+// https://stackoverflow.com/a/12409344/2710227
+const _datetimeToDate = (datetimeObj) => {
+  const theDate = new Date(datetimeObj);
+  const yyyy = theDate.getFullYear();
+
+  let mm = theDate.getMonth() + 1; // Months start at 0!
+  let dd = theDate.getDate();
+
+  if (dd < 10) dd = '0' + dd;
+  if (mm < 10) mm = '0' + mm;
+
+  return `${mm}/${dd}/${yyyy}`;
+}
+
 const _groupJobApps = (jobApps) => {
   const jobAppDates = {};
 
   jobApps.forEach(jobApp => {
-    const jobAppDate = jobApp.created;
+    const jobAppDate = _datetimeToDate(jobApp.created);
     const jobApplied = !jobApp.why_not_apply;
 
     if (jobAppDate in jobAppDates) {
@@ -116,9 +131,6 @@ const getStats = async (req, res) => {
           msg: 'failed to get stats'
         });
       } else {
-        // prep return data
-        console.log(qres);
-
         res.status(200).send({
           data: {
             totalJobsViewed: qres.length,
