@@ -238,8 +238,13 @@ const Body = (props) => {
   }, [success]);
 
   useEffect(() => {
+    if (stats) {
+      setupNightlyAlert(timer, setTimer, applied, setApplied, stats);
+    }
+  }, [stats]);
+
+  useEffect(() => {
     getStats(setStats);
-    setupNightlyAlert(timer, setTimer, applied, setApplied, stats);
   }, []);
 
   return (
