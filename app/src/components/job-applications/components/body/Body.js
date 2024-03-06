@@ -201,7 +201,7 @@ const checkTime = (timer, setTimer, applied, setApplied, stats) => {
       setApplied(false);
     }
 
-    checkTime(timer, setTimer);
+    checkTime(timer, setTimer, applied, setApplied, stats);
   }, 60000)); // every min, but mod check above limits to 4 times an hour
 }
 
@@ -238,7 +238,7 @@ const Body = (props) => {
   }, [success]);
 
   useEffect(() => {
-    if (stats) {
+    if (stats?.totalJobsViewed) {
       setupNightlyAlert(timer, setTimer, applied, setApplied, stats);
     }
   }, [stats]);
