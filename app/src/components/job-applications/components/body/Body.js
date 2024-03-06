@@ -87,7 +87,7 @@ const overview = (stats) => (
       />
       </div>
     </div>}
-    {!stats?.totalJobsViewed && <div classNme="Body__overview-no-data">No Data</div>}
+    {!stats?.totalJobsViewed && <div className="Body__overview-no-data">No Data</div>}
   </div>
 );
 
@@ -152,12 +152,76 @@ const getStats = (setStats) => {
   });
 }
 
+// Desktop browser notifications from MDN docs
+const notify = (notificationStr) => {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification(notificationStr);
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification(notificationStr);
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them any more.
+}
+
+const checkTime = (timer, setTimer, applied, setApplied) => {
+  if (timer) clearTimeout(timer);
+
+  // every minute check if 9 PM
+  setTimer(setTimeout(() => {
+    const d = new Date();
+    const hour = d.getHours();
+    const min = d.getMinutes();
+
+    if ((hour >= 22 && min % 15 === 0) && !applied) { // 10 PM
+      notify('Have you applied to any jobs today?');
+    }
+
+    if (applied && hour < 22) {
+      setApplied(false);
+    }
+
+    checkTime(timer, setTimer);
+  }, 60000)); // every min, but mod check above limits to 4 times an hour
+}
+
+const setupNightlyAlert = (timer, setTimer, applied, setApplied) => {
+  if (Notification.permission !== "granted") {
+    const interfaceBtns = document.querySelectorAll('.HeaderTabs__tab');
+    
+    interfaceBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        notify('Thanks for enabling desktop notifications.');
+      });
+    });
+  }
+
+  checkTime(timer, setTimer, applied, setApplied);
+}
+
 const Body = (props) => {
   const { activeTabId, tabs } = props;
   const activeTab = tabs[activeTabId];
 
   const [success, setSuccess] = useState(false); // used to show green animation toast thing
   const [stats, setStats] = useState({});
+  const [timer, setTimer] = useState(null);
+  const [applied, setApplied] = useState(false);
 
   useEffect(() => {
     if (success) {
@@ -170,6 +234,7 @@ const Body = (props) => {
 
   useEffect(() => {
     getStats(setStats);
+    setupNightlyAlert(timer, setTimer, applied, setApplied);
   }, []);
 
   return (

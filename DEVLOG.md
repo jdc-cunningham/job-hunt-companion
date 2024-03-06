@@ -48,6 +48,12 @@ Need to look at my old crypto alerts app for the desktop alerts
 
 Then have to schedule them, test timezone
 
+2:15 PM
+
+Oh man that's crazy... the app I made 3 years ago still works and BTC was 36K back then, it hit 69K and it tanked... now it's 67K lmfao... broooooo I am not a gambler for sure since I got owned, I lost like 4K
+
+Anyway let me steal the desktop alert
+
 ---
 
 03/01/2024
