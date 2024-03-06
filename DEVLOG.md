@@ -29,8 +29,8 @@ I got a notification a contract role I applied to was put on hold lol damn, bett
 Damn... it's still not in a usable state
 
 - [ ] need the desktop alerts (whole point of it)
-- [ ] deploy API (not hard, setup required)
-- [ ] deploy it as an electron app (easy)
+- [x] deploy API (not hard, setup required)
+- [x] deploy it as an electron app (easy)
 
 Well I have 2 more hours... I should do it
 
@@ -40,7 +40,13 @@ Get it done, as my work days I'm too spent
 
 Low motivation
 
+2:06 PM
 
+Alright I have it deployed locally
+
+Need to look at my old crypto alerts app for the desktop alerts
+
+Then have to schedule them, test timezone
 
 ---
 
