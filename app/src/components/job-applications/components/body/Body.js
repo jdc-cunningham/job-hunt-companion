@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+// https://stackoverflow.com/questions/67727603/error-category-is-not-a-registered-scale
+import Chart from 'chart.js/auto';
+import { Line } from 'react-chartjs-2';
 
 import './Body.scss';
 
@@ -42,9 +45,49 @@ const getDate = () => {
   return mm + '/' + dd + '/' + yyyy;
 }
 
-const overview = () => (
+const overview = (stats) => (
   <div className="Body__overview">
-
+    {stats?.totalJobsViewed && <div className="Body__overview-data">
+      <div className="Body__overview-stats">
+        <span>Jobs Applied: <span className="stat">{stats.applied}</span></span>
+        <span>Did not apply: <span className="stat">{stats.didNotApply}</span></span>
+        <span>Total jobs viewed: <span className="stat">{stats.totalJobsViewed}</span></span>
+      </div>
+      <div className="Body__overview-chart">
+      <Line
+        data={{
+          labels: Object.keys(stats.appDateCount),
+          datasets: [
+            {
+              label: "Applied",
+              data: Object.keys(stats.appDateCount).map(date => stats.appDateCount[date].applied),
+              fill: true,
+            },
+            {
+              label: "Did Not Apply",
+              data: Object.keys(stats.appDateCount).map(date => stats.appDateCount[date].notApplied),
+              fill: true,
+            },
+          ],
+        }}
+        options={{
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                  callback: function(value) {
+                    return `£${value}k`;
+                  }
+                }
+              }
+            ]
+          }
+        }}
+      />
+      </div>
+    </div>}
+    {!stats?.totalJobsViewed && <div classNme="Body__overview-no-data">No Data</div>}
   </div>
 );
 
@@ -98,9 +141,6 @@ const getStats = (setStats) => {
   )
   .then((res) => {
     if (res.status === 200) {
-      console.log(res);
-      console.log(res.data.data);
-      Object.keys(res.data.data.appDateCount).forEach(appDate => console.log(appDate));
       setStats(res.data.data);
     } else {
       alert('Failed to get stats');
@@ -135,7 +175,7 @@ const Body = (props) => {
   return (
     <div className="Body">
       {success && <div className="Body__toast slide-down-fade-out">Added!</div>}
-      {activeTab === 'Overview' && overview()}
+      {activeTab === 'Overview' && overview(stats)}
       {activeTab === 'Applied' && applyForm(saveData, setSuccess)}
       {activeTab === 'Did Not Apply' && didNotApplyForm(saveData, setSuccess)}
     </div>
