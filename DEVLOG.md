@@ -28,7 +28,7 @@ I got a notification a contract role I applied to was put on hold lol damn, bett
 
 Damn... it's still not in a usable state
 
-- [ ] need the desktop alerts (whole point of it)
+- [x] need the desktop alerts (whole point of it)
 - [x] deploy API (not hard, setup required)
 - [x] deploy it as an electron app (easy)
 
@@ -53,6 +53,18 @@ Then have to schedule them, test timezone
 Oh man that's crazy... the app I made 3 years ago still works and BTC was 36K back then, it hit 69K and it tanked... now it's 67K lmfao... broooooo I am not a gambler for sure since I got owned, I lost like 4K
 
 Anyway let me steal the desktop alert
+
+2:34 PM
+
+Oh damn there's no way to set the applied... guess it could use a check if any data was added today
+
+2:39 PM
+
+Alright gonna stop here, will see how it does 6 hrs from now
+
+Damn... then it's back to work tomorrow, mental prison
+
+I'm tempted to do the 3x12 shift that would give me 4 days off but damn... that's brutal
 
 ---
 

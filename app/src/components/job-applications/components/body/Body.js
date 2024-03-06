@@ -179,7 +179,7 @@ const notify = (notificationStr) => {
   // want to be respectful there is no need to bother them any more.
 }
 
-const checkTime = (timer, setTimer, applied, setApplied) => {
+const checkTime = (timer, setTimer, applied, setApplied, stats) => {
   if (timer) clearTimeout(timer);
 
   // every minute check if 9 PM
@@ -187,9 +187,14 @@ const checkTime = (timer, setTimer, applied, setApplied) => {
     const d = new Date();
     const hour = d.getHours();
     const min = d.getMinutes();
+    const todaysDate = getDate();
 
     if ((hour >= 22 && min % 15 === 0) && !applied) { // 10 PM
       notify('Have you applied to any jobs today?');
+    }
+
+    if (todaysDate in Object.keys(stats.appDateCount)) {
+      setApplied(true);
     }
 
     if (applied && hour < 22) {
@@ -200,7 +205,7 @@ const checkTime = (timer, setTimer, applied, setApplied) => {
   }, 60000)); // every min, but mod check above limits to 4 times an hour
 }
 
-const setupNightlyAlert = (timer, setTimer, applied, setApplied) => {
+const setupNightlyAlert = (timer, setTimer, applied, setApplied, stats) => {
   if (Notification.permission !== "granted") {
     const interfaceBtns = document.querySelectorAll('.HeaderTabs__tab');
     
@@ -211,7 +216,7 @@ const setupNightlyAlert = (timer, setTimer, applied, setApplied) => {
     });
   }
 
-  checkTime(timer, setTimer, applied, setApplied);
+  checkTime(timer, setTimer, applied, setApplied, stats);
 }
 
 const Body = (props) => {
@@ -234,7 +239,7 @@ const Body = (props) => {
 
   useEffect(() => {
     getStats(setStats);
-    setupNightlyAlert(timer, setTimer, applied, setApplied);
+    setupNightlyAlert(timer, setTimer, applied, setApplied, stats);
   }, []);
 
   return (
