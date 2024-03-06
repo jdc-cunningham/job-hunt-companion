@@ -8,7 +8,7 @@ const port = 5076;
 app.use(cors());
 
 const {
-  addJobApp
+  addJobApp, importJobApp,
 } = require('./methods');
 
 app.use(
@@ -19,6 +19,7 @@ app.use(
 );
 
 app.post('/add-job-app', addJobApp);
+app.post('/import-job-app', importJobApp);
 
 app.listen(port, () => {
   console.log(`App running... on port ${port}`);

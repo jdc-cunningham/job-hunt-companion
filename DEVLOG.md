@@ -1,3 +1,25 @@
+03/06/2024
+
+10:58 AM
+
+Alright, I'm gonna get this to the finish line today.
+
+I have 4.5 hrs till I have to leave to donate plasma again
+
+11:12 AM
+
+Distracted
+
+11:16 AM
+
+Oh yeah I'm doing the batch import... it's crazy so far I have looked at 672 jobs and I've only been able to apply to 58
+
+This is how those posts on Reddit about applying to thousands of jobs happen except I actually look at the job description before applying
+
+
+
+---
+
 03/01/2024
 
 6:56 PM

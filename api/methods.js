@@ -26,6 +26,29 @@ const _jobAppExists = async (companyName) => (
   })
 );
 
+const importJobApp = async (req, res) => {
+  const { companyName, jobInfo, source, techStack, whyNotApply, status, date } = req.body;
+
+  pool.query(
+    `INSERT INTO job_applications SET id = ?, company_name = ?, job_info = ?, source = ?, tech_stack = ?, why_not_apply = ?, status = ?, created = ?`,
+    [null, companyName, jobInfo, source, techStack, whyNotApply, status, date],
+    (err, qres) => {
+      if (err) {
+        console.error('failed to insert job app', err);
+
+        res.status(400).send({
+          err: true,
+          msg: 'failed to add job app'
+        });
+      } else {
+        res.status(201).send({
+          err: false,
+        });
+      }
+    }
+  );
+};
+
 const addJobApp = async (req, res) => {
   // most of these fields are optional
   const { companyName, jobInfo, source, techStack, whyNotApply, status } = req.body;
@@ -36,11 +59,11 @@ const addJobApp = async (req, res) => {
     [null, companyName, jobInfo, source, techStack, whyNotApply, status, now],
     (err, qres) => {
       if (err) {
-        console.error('failed to insert note', err);
+        console.error('failed to insert job app', err);
 
         res.status(400).send({
           err: true,
-          msg: 'failed to add note'
+          msg: 'failed to add job app'
         });
       } else {
         res.status(201).send({
@@ -53,4 +76,5 @@ const addJobApp = async (req, res) => {
 
 module.exports = {
   addJobApp,
+  importJobApp
 }

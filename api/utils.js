@@ -31,7 +31,7 @@ const getDateTime = () => {
 
 const formatTimeStr = (timeStr) => {
   if (timeStr.indexOf('T') !== -1) {
-      timeStr = timeStr.split('T').join(' ').split('.000Z').join('');
+    timeStr = timeStr.split('T').join(' ').split('.000Z').join('');
   }
 
   return timeStr;

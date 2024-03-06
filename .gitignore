@@ -1,5 +1,7 @@
 # files
 .env
+applied.csv
+did-not-apply.csv
 
 # folders
 node_modules/
