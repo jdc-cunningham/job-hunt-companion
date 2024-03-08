@@ -9,7 +9,7 @@ import './Body.scss';
 const baseApiPath = window.location.href.includes('local') ? 'http://localhost:5076' : 'http://192.168.1.144:5076'; // 192 is an RPi on my local network
 
 const addJobApp = (data, setSuccess) => {
-  const { companyName, stackInfo, additionalInfo, reason } = data;
+  const { companyName, stackInfo, additionalInfo, whyNotApply } = data;
 
   axios.post(
     `${baseApiPath}/add-job-app`,
@@ -18,8 +18,8 @@ const addJobApp = (data, setSuccess) => {
       source: '', // this is usually LinkedIn
       jobInfo: additionalInfo,
       techStack: stackInfo,
-      whyNotApply: reason ? reason : '', // uses NULL
-      status: reason ? '' : 'applied',
+      whyNotApply: whyNotApply ? whyNotApply : '', // uses NULL
+      status: whyNotApply ? '' : 'applied',
     }
   )
   .then((res) => {

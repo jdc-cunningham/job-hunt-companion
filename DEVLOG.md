@@ -1,3 +1,9 @@
+03/07/2024
+
+10:36 PM
+
+It's bad that the font has no lower case... everything is always upper case ha damn
+
 03/06/2024
 
 10:58 AM
