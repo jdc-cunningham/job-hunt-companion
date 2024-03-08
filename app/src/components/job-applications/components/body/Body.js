@@ -18,7 +18,7 @@ const addJobApp = (data, setSuccess) => {
       source: '', // this is usually LinkedIn
       jobInfo: additionalInfo,
       techStack: stackInfo,
-      whyNotApply: reason,
+      whyNotApply: reason ? reason : '', // uses NULL
       status: reason ? '' : 'applied',
     }
   )
