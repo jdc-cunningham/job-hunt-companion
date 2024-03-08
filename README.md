@@ -8,9 +8,11 @@ Those eyes are terrifying... not an artist
 
 ### Example notification
 
-<img src="./win10-chrome-notification.JPG"/>
+<img src="./desktop-notification.JPG"/>
 
 shows up on bottom right of desktop
+
+note: the app can be minified and still do a notification
 
 ### Info about build
 
