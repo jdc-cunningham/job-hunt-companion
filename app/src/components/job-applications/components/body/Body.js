@@ -229,6 +229,12 @@ const Body = (props) => {
   const [applied, setApplied] = useState(false);
 
   useEffect(() => {
+    if (activeTab === 'Overview') {
+      getStats(setStats);
+    }
+  }, [activeTab]);
+
+  useEffect(() => {
     if (success) {
       setTimeout(() => {
         setSuccess(false);
