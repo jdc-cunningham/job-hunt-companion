@@ -193,7 +193,8 @@ const checkTime = (timer, setTimer, applied, setApplied, stats) => {
       notify('Have you applied to any jobs today?');
     }
 
-    if (todaysDate in Object.keys(stats.appDateCount)) {
+    // keeps asking until at least one job filled in today
+    if (Object.keys(stats.appDateCount).includes(todaysDate) && stats.appDateCount[todaysDate]?.applied) {
       setApplied(true);
     }
 
